@@ -1,0 +1,47 @@
+// Skills
+CREATE (java:Skill {name: 'Java'})
+CREATE (sql:Skill {name: 'SQL'})
+CREATE (spring:Skill {name: 'Spring Boot'})
+CREATE (angular:Skill {name: 'Angular'})
+
+// Candidate
+CREATE (c:Candidate {
+    id: 1,
+    name: 'Bhavani',
+    email: 'bhavani@gmail.com',
+    location: 'Hyderabad'
+})
+
+// Jobs
+CREATE (j1:Job {
+    id: 1,
+    title: 'Java Developer',
+    company: 'ABC Technologies'
+})
+
+CREATE (j2:Job {
+    id: 2,
+    title: 'Full Stack Developer',
+    company: 'XYZ Solutions'
+})
+
+// Courses
+CREATE (course:Course {
+    name: 'Angular for Beginners'
+})
+
+// Candidate skills
+CREATE (c)-[:HAS_SKILL]->(java)
+CREATE (c)-[:HAS_SKILL]->(sql)
+CREATE (c)-[:HAS_SKILL]->(spring)
+
+// Job requirements
+CREATE (j1)-[:REQUIRES]->(java)
+CREATE (j1)-[:REQUIRES]->(sql)
+CREATE (j1)-[:REQUIRES]->(spring)
+
+CREATE (j2)-[:REQUIRES]->(java)
+CREATE (j2)-[:REQUIRES]->(angular)
+
+// Course relationship
+CREATE (angular)-[:LEARN_WITH]->(course)
