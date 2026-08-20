@@ -64,3 +64,9 @@ The main objectives of JobGraph are:
           +--------------+--------------+
                          |
                        Course
+
+
+# Screenshots
+<img width="1795" height="792" alt="image" src="https://github.com/user-attachments/assets/539ab2fc-013d-4624-b970-8f7c28559158" />
+
+
