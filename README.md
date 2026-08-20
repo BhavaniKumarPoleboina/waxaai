@@ -14,6 +14,8 @@ The application is built using:
 - Official Neo4j Java Driver for database communication
 
 ---
+# Why a graph database?
+JobGraph uses Neo4j because the application is highly relationship-oriented. A candidate can have multiple skills, a job can require multiple skills, and courses can be associated with skills. Neo4j allows these relationships to be represented directly and makes multi-hop traversal such as Candidate → Skill → Job easier to query using Cypher.
 
 # 🎯 Problem Statement
 
