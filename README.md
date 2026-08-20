@@ -67,6 +67,7 @@ The main objectives of JobGraph are:
 
 
 # Screenshots
-<img width="1795" height="792" alt="image" src="https://github.com/user-attachments/assets/539ab2fc-013d-4624-b970-8f7c28559158" />
+<img width="1817" height="785" alt="Dashboard" src="https://github.com/user-attachments/assets/228d53c7-84c3-4186-b9c2-2bcaa57d4faa" />
+
 
 
