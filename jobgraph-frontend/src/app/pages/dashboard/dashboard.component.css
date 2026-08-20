@@ -1,0 +1,67 @@
+.dashboard {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 25px;
+}
+
+.welcome {
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #7c3aed
+  );
+
+  border-radius: 20px;
+  padding: 35px;
+  color: white;
+  margin-bottom: 30px;
+
+  box-shadow: 0 15px 35px rgba(79, 70, 229, 0.2);
+}
+
+.welcome h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  opacity: 0.85;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #edf0f5;
+  border-radius: 16px;
+  padding: 25px;
+
+  box-shadow: 0 8px 25px rgba(30, 41, 59, 0.05);
+
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(30, 41, 59, 0.09);
+}
+
+.card h2 {
+  font-size: 35px;
+  color: #4f46e5;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #718096;
+}
+
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

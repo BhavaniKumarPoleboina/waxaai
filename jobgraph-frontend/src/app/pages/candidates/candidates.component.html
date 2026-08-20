@@ -1,0 +1,33 @@
+<div class="container">
+
+  <h1>Candidates</h1>
+
+  <table>
+
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Experience</th>
+        <th>Location</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      <tr *ngFor="let candidate of candidates">
+
+        <td>{{ candidate.id }}</td>
+        <td>{{ candidate.name }}</td>
+        <td>{{ candidate.email }}</td>
+        <td>{{ candidate.experience }} years</td>
+        <td>{{ candidate.location }}</td>
+
+      </tr>
+
+    </tbody>
+
+  </table>
+
+</div>

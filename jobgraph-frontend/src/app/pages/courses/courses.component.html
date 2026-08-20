@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h1>Recommended Courses</h1>
+
+  <div
+    class="course-card"
+    *ngFor="let course of courses">
+
+    <h2>{{ course.name }}</h2>
+
+    <p>
+      Platform: {{ course.platform }}
+    </p>
+
+    <a
+      [href]="course.url"
+      target="_blank">
+
+      View Course
+
+    </a>
+
+  </div>
+
+</div>

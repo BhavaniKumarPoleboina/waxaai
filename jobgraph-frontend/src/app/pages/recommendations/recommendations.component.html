@@ -1,0 +1,58 @@
+<div class="container">
+
+  <h1>Recommended Jobs</h1>
+
+  <div
+    class="job-card"
+    *ngFor="let job of recommendations">
+
+    <h2>{{ job.jobTitle }}</h2>
+
+    <p>📍 {{ job.location }}</p>
+
+    <div class="match-section">
+
+  <div class="match-header">
+
+    <span>Job Match</span>
+
+    <strong>
+      {{ job.matchPercentage }}%
+    </strong>
+
+  </div>
+
+  <div class="progress">
+
+    <div
+      class="progress-bar"
+      [style.width.%]="job.matchPercentage">
+    </div>
+
+  </div>
+
+</div>
+
+    <h4>Matched Skills</h4>
+
+    <span
+      class="skill matched"
+      *ngFor="let skill of job.matchedSkills">
+
+      ✓ {{ skill }}
+
+    </span>
+
+    <h4>Missing Skills</h4>
+
+    <span
+      class="skill missing"
+      *ngFor="let skill of job.missingSkills">
+
+      ✗ {{ skill }}
+
+    </span>
+
+  </div>
+
+</div>

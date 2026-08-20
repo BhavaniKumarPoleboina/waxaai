@@ -1,0 +1,25 @@
+<div class="container">
+
+  <h1>Skill Gap Analysis</h1>
+
+  <div
+    class="gap-card"
+    *ngFor="let gap of skillGaps">
+
+    <h2>{{ gap.jobTitle }}</h2>
+
+    <h3>Skills You Have</h3>
+
+    <p *ngFor="let skill of gap.matchedSkills">
+      ✓ {{ skill }}
+    </p>
+
+    <h3>Skills You Need</h3>
+
+    <p *ngFor="let skill of gap.missingSkills">
+      ❌ {{ skill }}
+    </p>
+
+  </div>
+
+</div>
